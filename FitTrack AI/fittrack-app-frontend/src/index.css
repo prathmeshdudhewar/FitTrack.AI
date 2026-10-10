@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body, #root {
+  background-color: #0B0F14;
+  color: #F8FAFC;
+  font-family: 'Inter', system-ui, sans-serif;
+  min-height: 100%;
+}
+
+body { margin: 0; }
+
+/* Custom scrollbar */
+::-webkit-scrollbar { width: 8px; height: 8px; }
+::-webkit-scrollbar-track { background: #0B0F14; }
+::-webkit-scrollbar-thumb { background: #232A33; border-radius: 4px; }
+::-webkit-scrollbar-thumb:hover { background: #2f3843; }
+
+/* MUI dark tweaks */
+.MuiOutlinedInput-root {
+  background: #0B0F14 !important;
+}
+.MuiOutlinedInput-notchedOutline {
+  border-color: #232A33 !important;
+}
+.MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline {
+  border-color: #A3E635 !important;
+}
+.MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+  border-color: #A3E635 !important;
+}
+.MuiInputLabel-root {
+  color: #94A3B8 !important;
+}
+
